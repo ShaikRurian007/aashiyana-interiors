@@ -104,6 +104,28 @@ html.lenis body {
   }
 }
 
+/* scroll-cue animations (welcome overlay after the door opens) */
+@keyframes scrollwheel {
+  0% { transform: translateY(0); opacity: 0; }
+  25% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+.animate-scrollwheel {
+  animation: scrollwheel 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+.animate-bob {
+  animation: bob 1.8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-scrollwheel,
+  .animate-bob { animation: none; }
+}
+
 ::selection {
   background: rgba(201, 162, 75, 0.3);
   color: #fff;

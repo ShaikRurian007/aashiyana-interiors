@@ -17,6 +17,7 @@ export default function DoorHero() {
   const copy = useRef(null);
   const hint = useRef(null);
   const seam = useRef(null);
+  const welcome = useRef(null);
 
   const door = img('mandala-door');
   // Warm gold entryway revealed beyond the door — tonally matches the gold
@@ -58,6 +59,14 @@ export default function DoorHero() {
         .to(interior.current, { scale: 1, autoAlpha: 1, duration: 1 }, 0.12)
         .to(interior.current, { scale: 1.12, duration: 0.7 }, 1.05)
         .to([leftLeaf.current, rightLeaf.current], { autoAlpha: 0, duration: 0.35 }, 1.15);
+
+      // 4. once inside, fade in a welcome + scroll cue so the user knows to continue
+      tl.fromTo(
+        welcome.current,
+        { autoAlpha: 0, y: 26 },
+        { autoAlpha: 1, y: 0, duration: 0.4 },
+        1.25
+      );
     }, root);
 
     return () => ctx.revert();
@@ -167,6 +176,33 @@ export default function DoorHero() {
           Scroll to open the door
         </p>
         <div className="mx-auto mt-3 h-10 w-[1px] bg-gradient-to-b from-gold to-transparent" />
+      </div>
+
+      {/* welcome cue — fades in once the door is open, guides the next scroll */}
+      <div
+        ref={welcome}
+        className="pointer-events-none absolute inset-0 z-20 flex flex-col items-center justify-end pb-14 text-center opacity-0 md:pb-20"
+      >
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent" />
+        <div className="relative px-6">
+          <p className="font-sans text-xs uppercase tracking-luxe text-gold-light [text-shadow:0_2px_16px_rgba(0,0,0,0.9)]">
+            Welcome inside
+          </p>
+          <h2 className="mt-3 font-serif text-3xl font-light text-cream [text-shadow:0_3px_28px_rgba(0,0,0,0.9)] md:text-5xl">
+            Now, let’s walk through your home
+          </h2>
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <span className="font-sans text-[11px] uppercase tracking-luxe text-cream/85 [text-shadow:0_2px_14px_rgba(0,0,0,0.9)]">
+              Keep scrolling to explore
+            </span>
+            <span className="flex h-10 w-6 justify-center rounded-full border border-gold/70 pt-2">
+              <span className="h-2 w-1 animate-scrollwheel rounded-full bg-gold" />
+            </span>
+            <svg viewBox="0 0 24 24" className="h-5 w-5 animate-bob fill-none stroke-gold" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -19,7 +19,9 @@ export default function DoorHero() {
   const seam = useRef(null);
 
   const door = img('mandala-door');
-  const inside = img('living-marble-tv-wall');
+  // Warm gold entryway revealed beyond the door — tonally matches the gold
+  // mandala you just walked through (the cool grey TV wall clashed).
+  const inside = img('foyer-console-gold');
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -134,14 +136,23 @@ export default function DoorHero() {
         ref={copy}
         className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center text-center"
       >
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/40 via-transparent to-ink/70" />
+        {/* overall darken + focused radial scrim so copy stays legible over the door */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/25 to-ink/80" />
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{ background: 'radial-gradient(ellipse 62% 52% at 50% 44%, rgba(8,6,4,0.78), transparent 72%)' }}
+        />
         <div className="relative px-6">
-          <p className="eyebrow mb-5 animate-fade-up">{BRAND.city} • Turnkey Interiors</p>
-          <h1 className="heading-xl text-cream drop-shadow-[0_2px_30px_rgba(0,0,0,0.6)]">
+          <p className="mb-5 animate-fade-up font-sans text-xs uppercase tracking-luxe text-cream [text-shadow:0_2px_18px_rgba(0,0,0,0.95)]">
+            <span className="text-gold-light">{BRAND.city}</span>
+            <span className="mx-2 text-cream/50">•</span>
+            Turnkey Interiors
+          </p>
+          <h1 className="heading-xl text-cream [text-shadow:0_4px_44px_rgba(0,0,0,0.9)]">
             <span className="block">Aashiyana</span>
             <span className="block text-gold-gradient">Interiors &amp; Decors</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-xl font-sans text-sm uppercase tracking-luxe text-cream/80">
+          <p className="mx-auto mt-6 max-w-xl font-sans text-sm uppercase tracking-luxe text-cream/85 [text-shadow:0_2px_14px_rgba(0,0,0,0.9)]">
             {BRAND.tagline}
           </p>
         </div>

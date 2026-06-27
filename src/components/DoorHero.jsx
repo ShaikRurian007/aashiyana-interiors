@@ -36,7 +36,7 @@ export default function DoorHero() {
         scrollTrigger: {
           trigger: root.current,
           start: 'top top',
-          end: '+=220%',
+          end: '+=175%',
           scrub: 1,
           pin: true,
           anticipatePin: 1,
@@ -60,12 +60,12 @@ export default function DoorHero() {
         .to(interior.current, { scale: 1.12, duration: 0.7 }, 1.05)
         .to([leftLeaf.current, rightLeaf.current], { autoAlpha: 0, duration: 0.35 }, 1.15);
 
-      // 4. once inside, fade in a welcome + scroll cue so the user knows to continue
+      // 4. fade the welcome + scroll cue in AS the doors finish opening (no dead scroll)
       tl.fromTo(
         welcome.current,
         { autoAlpha: 0, y: 26 },
-        { autoAlpha: 1, y: 0, duration: 0.4 },
-        1.25
+        { autoAlpha: 1, y: 0, duration: 0.35 },
+        0.85
       );
     }, root);
 

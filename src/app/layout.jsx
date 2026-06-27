@@ -1,7 +1,7 @@
 import { Cormorant_Garamond, Jost } from 'next/font/google';
 import './globals.css';
 import { BRAND } from '@/lib/content';
-import { asset } from '@/lib/assets';
+import { asset, absUrl } from '@/lib/assets';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -40,21 +40,21 @@ export const metadata = {
   ],
   authors: [{ name: BRAND.name }],
   creator: BRAND.name,
-  alternates: { canonical: '/' },
+  alternates: { canonical: `${BRAND.url}/` },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: BRAND.url,
+    url: `${BRAND.url}/`,
     siteName: BRAND.name,
     title,
     description,
-    images: [{ url: asset('/images/living/living-marble-tv-wall.webp'), width: 1600, height: 1067, alt: BRAND.name }],
+    images: [{ url: absUrl('/images/living/living-marble-tv-wall.webp'), width: 1600, height: 1067, alt: BRAND.name }],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
-    images: [asset('/images/living/living-marble-tv-wall.webp')],
+    images: [absUrl('/images/living/living-marble-tv-wall.webp')],
   },
   robots: {
     index: true,
@@ -79,8 +79,8 @@ function LocalBusinessJsonLd() {
     '@type': 'InteriorDesignBusiness',
     '@id': `${BRAND.url}/#business`,
     name: BRAND.name,
-    image: asset('/images/living/living-marble-tv-wall.webp'),
-    logo: asset('/images/logo/logo-square.webp'),
+    image: absUrl('/images/living/living-marble-tv-wall.webp'),
+    logo: absUrl('/images/logo/logo-square.webp'),
     url: BRAND.url,
     telephone: BRAND.phones[0],
     email: BRAND.email,

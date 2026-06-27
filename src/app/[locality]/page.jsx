@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { LOCALITIES, findLocality } from '@/lib/localities';
 import { BRAND, SERVICES, PROCESS } from '@/lib/content';
-import { img } from '@/lib/assets';
+import { img, absUrl } from '@/lib/assets';
 import LandingHeader from '@/components/LandingHeader';
 import Services from '@/components/Services';
 import LeadForm from '@/components/LeadForm';
@@ -26,12 +26,12 @@ export function generateMetadata({ params }) {
   return {
     title,
     description,
-    alternates: { canonical: `/${loc.slug}/` },
+    alternates: { canonical: `${BRAND.url}/${loc.slug}/` },
     openGraph: {
       title: `${title} | ${BRAND.name}`,
       description,
       url: `${BRAND.url}/${loc.slug}/`,
-      images: [{ url: img('living-marble-tv-wall').src }],
+      images: [{ url: absUrl('/images/living/living-marble-tv-wall.webp') }],
     },
   };
 }

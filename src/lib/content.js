@@ -12,8 +12,10 @@ export const BRAND = {
   email: 'aashianainteriorsanddecors@gmail.com',
   instagram: 'aashiyanainteriorsanddecors',
   instagramUrl: 'https://www.instagram.com/aashiyanainteriorsanddecors',
-  // Update this to your final GitHub Pages / custom domain URL before launch.
-  url: 'https://aashiyanainteriors.in',
+  // Canonical site origin (no trailing slash). This is the live GitHub Pages URL.
+  // To switch to a custom domain: set this to e.g. https://aashiyanainteriors.in,
+  // add public/CNAME with that domain, and CI drops the basePath automatically.
+  url: 'https://shaikrurian007.github.io/aashiyana-interiors',
   areaServed: 'Hyderabad, Telangana',
 };
 

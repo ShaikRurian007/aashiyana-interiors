@@ -1,4 +1,5 @@
 import manifest from '@/data/manifest.json';
+import { BRAND } from '@/lib/content';
 
 // Prefix a public path with the configured basePath so assets resolve
 // correctly when the site is served from /<repo> on GitHub Pages.
@@ -8,6 +9,13 @@ export function asset(path) {
   if (!path) return path;
   if (/^https?:\/\//.test(path)) return path;
   return `${BASE}${path}`;
+}
+
+// Fully-qualified absolute URL for metadata (canonical, OG, JSON-LD).
+// BRAND.url already includes any project subpath, so we never add basePath here.
+export function absUrl(path = '') {
+  if (/^https?:\/\//.test(path)) return path;
+  return `${BRAND.url}${path}`;
 }
 
 // Look up one image record by slug, with basePath-resolved src.

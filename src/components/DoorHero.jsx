@@ -1,0 +1,162 @@
+'use client';
+
+import { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { img } from '@/lib/assets';
+import { BRAND } from '@/lib/content';
+
+export default function DoorHero() {
+  const root = useRef(null);
+  const scene = useRef(null);
+  const leftLeaf = useRef(null);
+  const rightLeaf = useRef(null);
+  const leftShade = useRef(null);
+  const rightShade = useRef(null);
+  const interior = useRef(null);
+  const copy = useRef(null);
+  const hint = useRef(null);
+  const seam = useRef(null);
+
+  const door = img('mandala-door');
+  const inside = img('living-marble-tv-wall');
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      gsap.set([leftLeaf.current, rightLeaf.current], { transformStyle: 'preserve-3d' });
+      gsap.set(interior.current, { scale: 1.2, autoAlpha: 0.35 });
+
+      const tl = gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: {
+          trigger: root.current,
+          start: 'top top',
+          end: '+=220%',
+          scrub: 1,
+          pin: true,
+          anticipatePin: 1,
+        },
+      });
+
+      // 1. brand copy & hint clear, seam flares
+      tl.to(copy.current, { autoAlpha: 0, y: -50, duration: 0.28 }, 0)
+        .to(hint.current, { autoAlpha: 0, duration: 0.12 }, 0)
+        .to(seam.current, { opacity: 1, duration: 0.12 }, 0)
+        .to(seam.current, { opacity: 0, duration: 0.3 }, 0.18);
+
+      // 2. doors swing open in 3D
+      tl.to(leftLeaf.current, { rotateY: -108, duration: 1 }, 0.12)
+        .to(rightLeaf.current, { rotateY: 108, duration: 1 }, 0.12)
+        .to([leftShade.current, rightShade.current], { opacity: 0.6, duration: 1 }, 0.12);
+
+      // 3. camera dollies through the opening into the interior
+      tl.to(scene.current, { scale: 1.55, duration: 1.1 }, 0.12)
+        .to(interior.current, { scale: 1, autoAlpha: 1, duration: 1 }, 0.12)
+        .to(interior.current, { scale: 1.12, duration: 0.7 }, 1.05)
+        .to([leftLeaf.current, rightLeaf.current], { autoAlpha: 0, duration: 0.35 }, 1.15);
+    }, root);
+
+    return () => ctx.revert();
+  }, []);
+
+  const leafBg = {
+    backgroundImage: `url(${door.src})`,
+    backgroundSize: '200% 100%',
+    backgroundRepeat: 'no-repeat',
+  };
+
+  return (
+    <section
+      ref={root}
+      className="door-hero relative h-screen w-full overflow-hidden bg-ink"
+      style={{ perspective: '1500px', perspectiveOrigin: '50% 45%' }}
+      aria-label="Enter Aashiyana Interiors"
+    >
+      {/* interior revealed beyond the doors */}
+      <img
+        ref={interior}
+        src={inside.src}
+        alt={inside.alt}
+        width={inside.width}
+        height={inside.height}
+        className="absolute inset-0 h-full w-full object-cover"
+        fetchPriority="high"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-ink/35" />
+
+      {/* the 3D door scene */}
+      <div
+        ref={scene}
+        className="absolute inset-0 flex items-center justify-center"
+        style={{ transformStyle: 'preserve-3d' }}
+      >
+        <div
+          className="relative h-[100svh] max-h-[100svh]"
+          style={{ aspectRatio: '1414 / 2121', transformStyle: 'preserve-3d' }}
+        >
+          {/* left leaf */}
+          <div
+            ref={leftLeaf}
+            className="absolute left-0 top-0 h-full w-1/2 will-change-transform"
+            style={{ ...leafBg, backgroundPosition: '0% 50%', transformOrigin: 'left center' }}
+          >
+            <div
+              ref={leftShade}
+              className="absolute inset-0 opacity-0"
+              style={{ background: 'linear-gradient(90deg, rgba(0,0,0,0.65), rgba(0,0,0,0.05))' }}
+            />
+          </div>
+          {/* right leaf */}
+          <div
+            ref={rightLeaf}
+            className="absolute right-0 top-0 h-full w-1/2 will-change-transform"
+            style={{ ...leafBg, backgroundPosition: '100% 50%', transformOrigin: 'right center' }}
+          >
+            <div
+              ref={rightShade}
+              className="absolute inset-0 opacity-0"
+              style={{ background: 'linear-gradient(270deg, rgba(0,0,0,0.65), rgba(0,0,0,0.05))' }}
+            />
+          </div>
+          {/* glowing centre seam where the leaves meet */}
+          <div
+            ref={seam}
+            className="pointer-events-none absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 opacity-0"
+            style={{ background: 'linear-gradient(to bottom, transparent, #e3c77d, transparent)', boxShadow: '0 0 30px 6px rgba(227,199,125,0.7)' }}
+          />
+        </div>
+      </div>
+
+      {/* brand copy overlaid on the closed door */}
+      <div
+        ref={copy}
+        className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center text-center"
+      >
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/40 via-transparent to-ink/70" />
+        <div className="relative px-6">
+          <p className="eyebrow mb-5 animate-fade-up">{BRAND.city} • Turnkey Interiors</p>
+          <h1 className="heading-xl text-cream drop-shadow-[0_2px_30px_rgba(0,0,0,0.6)]">
+            <span className="block">Aashiyana</span>
+            <span className="block text-gold-gradient">Interiors &amp; Decors</span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-xl font-sans text-sm uppercase tracking-luxe text-cream/80">
+            {BRAND.tagline}
+          </p>
+        </div>
+      </div>
+
+      {/* scroll hint */}
+      <div
+        ref={hint}
+        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-center"
+      >
+        <p className="font-sans text-[11px] uppercase tracking-luxe text-cream/70">
+          Scroll to open the door
+        </p>
+        <div className="mx-auto mt-3 h-10 w-[1px] bg-gradient-to-b from-gold to-transparent" />
+      </div>
+    </section>
+  );
+}

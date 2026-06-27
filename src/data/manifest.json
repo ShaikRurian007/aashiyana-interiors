@@ -1,0 +1,576 @@
+{
+  "bedroom-charcoal-wood": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-charcoal-wood.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Modern bedroom with charcoal panelling and warm wood, Hyderabad interior",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-charcoal-wood-sm.webp"
+  },
+  "logo-white": {
+    "category": "logo",
+    "src": "/images/logo/logo-white.webp",
+    "width": 500,
+    "height": 500,
+    "alt": "Aashiyana Interiors and Decors logo",
+    "orientation": "landscape"
+  },
+  "texture-newsprint": {
+    "category": "texture",
+    "src": "/images/texture/texture-newsprint.webp",
+    "width": 1400,
+    "height": 930,
+    "alt": "Vintage newsprint material texture",
+    "orientation": "landscape"
+  },
+  "logo-square": {
+    "category": "logo",
+    "src": "/images/logo/logo-square.webp",
+    "width": 300,
+    "height": 300,
+    "alt": "Aashiyana Interiors and Decors logo",
+    "orientation": "landscape"
+  },
+  "mandala-door": {
+    "category": "door",
+    "src": "/images/door/mandala-door.webp",
+    "width": 1067,
+    "height": 1600,
+    "alt": "Carved gold mandala double entrance door by Aashiyana Interiors",
+    "orientation": "portrait"
+  },
+  "logo-mini": {
+    "category": "logo",
+    "src": "/images/logo/logo-mini.webp",
+    "width": 250,
+    "height": 250,
+    "alt": "Aashiyana Interiors and Decors logo",
+    "orientation": "landscape"
+  },
+  "bedroom-study-nook": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-study-nook.webp",
+    "width": 1600,
+    "height": 1200,
+    "alt": "Bedroom with built-in study nook and wardrobe",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-study-nook-sm.webp"
+  },
+  "texture-feather": {
+    "category": "texture",
+    "src": "/images/texture/texture-feather.webp",
+    "width": 1400,
+    "height": 785,
+    "alt": "Soft feather material texture",
+    "orientation": "landscape"
+  },
+  "villa-elevation-day": {
+    "category": "exterior",
+    "src": "/images/exterior/villa-elevation-day.webp",
+    "width": 1527,
+    "height": 1018,
+    "alt": "Modern villa elevation built by Aashiyana Interiors, Hyderabad",
+    "orientation": "landscape",
+    "srcSmall": "/images/exterior/villa-elevation-day-sm.webp"
+  },
+  "logo-stacked": {
+    "category": "logo",
+    "src": "/images/logo/logo-stacked.webp",
+    "width": 350,
+    "height": 350,
+    "alt": "Aashiyana Interiors and Decors logo",
+    "orientation": "landscape"
+  },
+  "office-executive-desk": {
+    "category": "commercial",
+    "src": "/images/commercial/office-executive-desk.webp",
+    "width": 1642,
+    "height": 1095,
+    "alt": "Executive office cabin interior design, Hyderabad",
+    "orientation": "landscape",
+    "srcSmall": "/images/commercial/office-executive-desk-sm.webp"
+  },
+  "bedroom-mirror-wall": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-mirror-wall.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "Bedroom with mirror feature wall and wardrobe",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-mirror-wall-sm.webp"
+  },
+  "texture-leopard": {
+    "category": "texture",
+    "src": "/images/texture/texture-leopard.webp",
+    "width": 1400,
+    "height": 1400,
+    "alt": "Leopard print decor material swatch",
+    "orientation": "landscape"
+  },
+  "texture-newsprint-2": {
+    "category": "texture",
+    "src": "/images/texture/texture-newsprint-2.webp",
+    "width": 1400,
+    "height": 930,
+    "alt": "Vintage newsprint material texture",
+    "orientation": "landscape"
+  },
+  "house-keys-handover": {
+    "category": "cta",
+    "src": "/images/cta/house-keys-handover.webp",
+    "width": 1200,
+    "height": 800,
+    "alt": "House keys handover after turnkey interior project completion",
+    "orientation": "landscape",
+    "srcSmall": "/images/cta/house-keys-handover-sm.webp"
+  },
+  "blueprint-hands": {
+    "category": "process",
+    "src": "/images/process/blueprint-hands.webp",
+    "width": 1218,
+    "height": 684,
+    "alt": "Designer marking architectural floor plan during interior design consultation",
+    "orientation": "landscape",
+    "srcSmall": "/images/process/blueprint-hands-sm.webp"
+  },
+  "wardrobe-glass-shutters": {
+    "category": "wardrobe",
+    "src": "/images/wardrobe/wardrobe-glass-shutters.webp",
+    "width": 900,
+    "height": 1128,
+    "alt": "Glass shutter wardrobe with internal storage",
+    "orientation": "portrait",
+    "srcSmall": "/images/wardrobe/wardrobe-glass-shutters-sm.webp"
+  },
+  "bathroom-stone-vanity": {
+    "category": "bathroom",
+    "src": "/images/bathroom/bathroom-stone-vanity.webp",
+    "width": 849,
+    "height": 1273,
+    "alt": "Designer bathroom with stone wall and wood vanity",
+    "orientation": "portrait",
+    "srcSmall": "/images/bathroom/bathroom-stone-vanity-sm.webp"
+  },
+  "dining-pooja-gold": {
+    "category": "living",
+    "src": "/images/living/dining-pooja-gold.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Dining and pooja area with gold accent niche",
+    "orientation": "landscape",
+    "srcSmall": "/images/living/dining-pooja-gold-sm.webp"
+  },
+  "texture-facets": {
+    "category": "texture",
+    "src": "/images/texture/texture-facets.webp",
+    "width": 1400,
+    "height": 788,
+    "alt": "Dark faceted geometric texture",
+    "orientation": "landscape"
+  },
+  "living-tv-warm": {
+    "category": "living",
+    "src": "/images/living/living-tv-warm.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Warm modern living room with TV unit, Hyderabad",
+    "orientation": "landscape",
+    "srcSmall": "/images/living/living-tv-warm-sm.webp"
+  },
+  "foyer-double-doors": {
+    "category": "living",
+    "src": "/images/living/foyer-double-doors.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Entrance foyer with designer double doors and marble flooring",
+    "orientation": "landscape",
+    "srcSmall": "/images/living/foyer-double-doors-sm.webp"
+  },
+  "living-marble-tv-wall": {
+    "category": "living",
+    "src": "/images/living/living-marble-tv-wall.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Living room marble TV feature wall with floating unit",
+    "orientation": "landscape",
+    "srcSmall": "/images/living/living-marble-tv-wall-sm.webp"
+  },
+  "ceiling-jaali-detail": {
+    "category": "detail",
+    "src": "/images/detail/ceiling-jaali-detail.webp",
+    "width": 1600,
+    "height": 1067,
+    "alt": "Carved jaali false-ceiling lighting detail",
+    "orientation": "landscape",
+    "srcSmall": "/images/detail/ceiling-jaali-detail-sm.webp"
+  },
+  "foyer-console-gold": {
+    "category": "living",
+    "src": "/images/living/foyer-console-gold.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Entryway console with gold textured feature wall",
+    "orientation": "landscape",
+    "srcSmall": "/images/living/foyer-console-gold-sm.webp"
+  },
+  "living-molding-classic": {
+    "category": "living",
+    "src": "/images/living/living-molding-classic.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Classic living room with wall moulding and marble floor",
+    "orientation": "landscape",
+    "srcSmall": "/images/living/living-molding-classic-sm.webp"
+  },
+  "pooja-arch-niche": {
+    "category": "pooja",
+    "src": "/images/pooja/pooja-arch-niche.webp",
+    "width": 1200,
+    "height": 1800,
+    "alt": "Dedicated pooja room with arched niche",
+    "orientation": "portrait",
+    "srcSmall": "/images/pooja/pooja-arch-niche-sm.webp"
+  },
+  "bedroom-curtains-grey": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-curtains-grey.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Master bedroom with grey drapes and cove lighting",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-curtains-grey-sm.webp"
+  },
+  "wardrobe-blush-gloss": {
+    "category": "wardrobe",
+    "src": "/images/wardrobe/wardrobe-blush-gloss.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Blush pink high-gloss sliding wardrobe",
+    "orientation": "landscape",
+    "srcSmall": "/images/wardrobe/wardrobe-blush-gloss-sm.webp"
+  },
+  "vanity-oval-mirror": {
+    "category": "vanity",
+    "src": "/images/vanity/vanity-oval-mirror.webp",
+    "width": 1132,
+    "height": 1697,
+    "alt": "Dressing table vanity with oval mirror",
+    "orientation": "portrait",
+    "srcSmall": "/images/vanity/vanity-oval-mirror-sm.webp"
+  },
+  "bathroom-grey-stone": {
+    "category": "bathroom",
+    "src": "/images/bathroom/bathroom-grey-stone.webp",
+    "width": 849,
+    "height": 1273,
+    "alt": "Grey stone bathroom with walk-in shower",
+    "orientation": "portrait",
+    "srcSmall": "/images/bathroom/bathroom-grey-stone-sm.webp"
+  },
+  "bedroom-grey-headboard": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-grey-headboard.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Bedroom with upholstered headboard and wardrobe",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-grey-headboard-sm.webp"
+  },
+  "bedroom-cove-textured": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-cove-textured.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Bedroom with textured wall and cove lighting",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-cove-textured-sm.webp"
+  },
+  "bedroom-sliding-wardrobe": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-sliding-wardrobe.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Bedroom with full-height sliding wardrobe",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-sliding-wardrobe-sm.webp"
+  },
+  "bedroom-study-combo": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-study-combo.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Bedroom with study table and wardrobe combination",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-study-combo-sm.webp"
+  },
+  "bedroom-marble-accent": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-marble-accent.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Bedroom with marble accent wall and cove lighting",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-marble-accent-sm.webp"
+  },
+  "bedroom-bright-minimal": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-bright-minimal.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Bright minimal bedroom with feature wall",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-bright-minimal-sm.webp"
+  },
+  "vanity-floating-desk": {
+    "category": "vanity",
+    "src": "/images/vanity/vanity-floating-desk.webp",
+    "width": 849,
+    "height": 1273,
+    "alt": "Floating dresser and study unit in bedroom",
+    "orientation": "portrait",
+    "srcSmall": "/images/vanity/vanity-floating-desk-sm.webp"
+  },
+  "wardrobe-white-utility": {
+    "category": "wardrobe",
+    "src": "/images/wardrobe/wardrobe-white-utility.webp",
+    "width": 849,
+    "height": 1273,
+    "alt": "White utility storage cabinet with plant",
+    "orientation": "portrait",
+    "srcSmall": "/images/wardrobe/wardrobe-white-utility-sm.webp"
+  },
+  "vanity-marble-gold": {
+    "category": "vanity",
+    "src": "/images/vanity/vanity-marble-gold.webp",
+    "width": 849,
+    "height": 1273,
+    "alt": "Dressing vanity with gold mirror and marble wall",
+    "orientation": "portrait",
+    "srcSmall": "/images/vanity/vanity-marble-gold-sm.webp"
+  },
+  "kitchen-sage-l-shape": {
+    "category": "kitchen",
+    "src": "/images/kitchen/kitchen-sage-l-shape.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Sage green L-shaped modular kitchen, Hyderabad",
+    "orientation": "landscape",
+    "srcSmall": "/images/kitchen/kitchen-sage-l-shape-sm.webp"
+  },
+  "kitchen-sage-tall-units": {
+    "category": "kitchen",
+    "src": "/images/kitchen/kitchen-sage-tall-units.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Sage green modular kitchen with tall units",
+    "orientation": "landscape",
+    "srcSmall": "/images/kitchen/kitchen-sage-tall-units-sm.webp"
+  },
+  "kitchen-sage-glass-display": {
+    "category": "kitchen",
+    "src": "/images/kitchen/kitchen-sage-glass-display.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Sage green modular kitchen with glass display unit",
+    "orientation": "landscape",
+    "srcSmall": "/images/kitchen/kitchen-sage-glass-display-sm.webp"
+  },
+  "kitchen-sage-marble": {
+    "category": "kitchen",
+    "src": "/images/kitchen/kitchen-sage-marble.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Sage green modular kitchen with marble counter",
+    "orientation": "landscape",
+    "srcSmall": "/images/kitchen/kitchen-sage-marble-sm.webp"
+  },
+  "kitchen-sage-island": {
+    "category": "kitchen",
+    "src": "/images/kitchen/kitchen-sage-island.webp",
+    "width": 1273,
+    "height": 849,
+    "alt": "Sage green modular kitchen with island, Hyderabad",
+    "orientation": "landscape",
+    "srcSmall": "/images/kitchen/kitchen-sage-island-sm.webp"
+  },
+  "bedroom-grey-textured-wall": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-grey-textured-wall.webp",
+    "width": 1697,
+    "height": 1132,
+    "alt": "Bedroom with grey textured feature wall",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-grey-textured-wall-sm.webp"
+  },
+  "wardrobe-open-shelving": {
+    "category": "wardrobe",
+    "src": "/images/wardrobe/wardrobe-open-shelving.webp",
+    "width": 849,
+    "height": 1273,
+    "alt": "Open wardrobe with internal shelving and lighting",
+    "orientation": "portrait",
+    "srcSmall": "/images/wardrobe/wardrobe-open-shelving-sm.webp"
+  },
+  "bathroom-round-mirror": {
+    "category": "bathroom",
+    "src": "/images/bathroom/bathroom-round-mirror.webp",
+    "width": 849,
+    "height": 1273,
+    "alt": "Grey bathroom with round mirror and wood vanity",
+    "orientation": "portrait",
+    "srcSmall": "/images/bathroom/bathroom-round-mirror-sm.webp"
+  },
+  "wardrobe-walkin-shelves": {
+    "category": "wardrobe",
+    "src": "/images/wardrobe/wardrobe-walkin-shelves.webp",
+    "width": 1200,
+    "height": 1504,
+    "alt": "Walk-in wardrobe with full storage shelving",
+    "orientation": "portrait",
+    "srcSmall": "/images/wardrobe/wardrobe-walkin-shelves-sm.webp"
+  },
+  "bedroom-wood-panel": {
+    "category": "bedroom",
+    "src": "/images/bedroom/bedroom-wood-panel.webp",
+    "width": 1671,
+    "height": 755,
+    "alt": "Bedroom with wood panel wardrobe and mirror",
+    "orientation": "landscape",
+    "srcSmall": "/images/bedroom/bedroom-wood-panel-sm.webp"
+  },
+  "retail-display-shelves": {
+    "category": "commercial",
+    "src": "/images/commercial/retail-display-shelves.webp",
+    "width": 908,
+    "height": 1138,
+    "alt": "Retail display shelving and counter interior",
+    "orientation": "portrait",
+    "srcSmall": "/images/commercial/retail-display-shelves-sm.webp"
+  },
+  "wardrobe-sliding-demo": {
+    "category": "wardrobe",
+    "src": "/images/wardrobe/wardrobe-sliding-demo.webp",
+    "width": 805,
+    "height": 717,
+    "alt": "Sliding mirror wardrobe demonstration",
+    "orientation": "landscape",
+    "srcSmall": "/images/wardrobe/wardrobe-sliding-demo-sm.webp"
+  },
+  "salon-twin-vanity": {
+    "category": "commercial",
+    "src": "/images/commercial/salon-twin-vanity.webp",
+    "width": 1210,
+    "height": 1517,
+    "alt": "Salon twin vanity counter with mirrors",
+    "orientation": "portrait",
+    "srcSmall": "/images/commercial/salon-twin-vanity-sm.webp"
+  },
+  "villa-elevation-street": {
+    "category": "exterior",
+    "src": "/images/exterior/villa-elevation-street.webp",
+    "width": 972,
+    "height": 1296,
+    "alt": "Modern villa street elevation by Aashiyana Interiors",
+    "orientation": "portrait",
+    "srcSmall": "/images/exterior/villa-elevation-street-sm.webp"
+  },
+  "staircase-rcc-structure": {
+    "category": "civil",
+    "src": "/images/civil/staircase-rcc-structure.webp",
+    "width": 720,
+    "height": 1280,
+    "alt": "RCC staircase structure during construction",
+    "orientation": "portrait",
+    "srcSmall": "/images/civil/staircase-rcc-structure-sm.webp"
+  },
+  "door-civil-raw": {
+    "category": "civil",
+    "src": "/images/civil/door-civil-raw.webp",
+    "width": 648,
+    "height": 1152,
+    "alt": "Raw civil door opening during construction phase",
+    "orientation": "portrait",
+    "srcSmall": "/images/civil/door-civil-raw-sm.webp"
+  },
+  "clinic-treatment-room": {
+    "category": "commercial",
+    "src": "/images/commercial/clinic-treatment-room.webp",
+    "width": 960,
+    "height": 720,
+    "alt": "Clinic treatment room interior design, Hyderabad",
+    "orientation": "landscape",
+    "srcSmall": "/images/commercial/clinic-treatment-room-sm.webp"
+  },
+  "clinic-corridor-branding": {
+    "category": "commercial",
+    "src": "/images/commercial/clinic-corridor-branding.webp",
+    "width": 960,
+    "height": 720,
+    "alt": "Clinic corridor with health branding interior",
+    "orientation": "landscape",
+    "srcSmall": "/images/commercial/clinic-corridor-branding-sm.webp"
+  },
+  "clinic-consult-room": {
+    "category": "commercial",
+    "src": "/images/commercial/clinic-consult-room.webp",
+    "width": 960,
+    "height": 720,
+    "alt": "Clinic consultation room interior design",
+    "orientation": "landscape",
+    "srcSmall": "/images/commercial/clinic-consult-room-sm.webp"
+  },
+  "clinic-reception-desk": {
+    "category": "commercial",
+    "src": "/images/commercial/clinic-reception-desk.webp",
+    "width": 960,
+    "height": 720,
+    "alt": "Clinic reception and consultation interior",
+    "orientation": "landscape",
+    "srcSmall": "/images/commercial/clinic-reception-desk-sm.webp"
+  },
+  "pharmacy-shelving": {
+    "category": "commercial",
+    "src": "/images/commercial/pharmacy-shelving.webp",
+    "width": 960,
+    "height": 720,
+    "alt": "Pharmacy shelving and dispensing counter interior",
+    "orientation": "landscape",
+    "srcSmall": "/images/commercial/pharmacy-shelving-sm.webp"
+  },
+  "construction-rcc-slab": {
+    "category": "civil",
+    "src": "/images/civil/construction-rcc-slab.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "RCC slab construction site, turnkey civil works",
+    "orientation": "landscape",
+    "srcSmall": "/images/civil/construction-rcc-slab-sm.webp"
+  },
+  "construction-brickwork": {
+    "category": "civil",
+    "src": "/images/civil/construction-brickwork.webp",
+    "width": 1152,
+    "height": 648,
+    "alt": "Brickwork construction stage of turnkey project",
+    "orientation": "landscape",
+    "srcSmall": "/images/civil/construction-brickwork-sm.webp"
+  },
+  "construction-foundation": {
+    "category": "civil",
+    "src": "/images/civil/construction-foundation.webp",
+    "width": 1152,
+    "height": 648,
+    "alt": "Foundation and footing construction stage",
+    "orientation": "landscape",
+    "srcSmall": "/images/civil/construction-foundation-sm.webp"
+  },
+  "instagram-qr": {
+    "category": "qr",
+    "src": "/images/qr/instagram-qr.webp",
+    "width": 377,
+    "height": 512,
+    "alt": "Aashiyana Interiors Instagram QR code",
+    "orientation": "portrait"
+  }
+}

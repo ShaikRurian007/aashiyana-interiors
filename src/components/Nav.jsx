@@ -43,7 +43,7 @@ export default function Nav() {
         <a href="#top" onClick={(e) => go(e, '#top')} className="flex items-center gap-3">
           <img src={logo.src} alt={logo.alt} className="h-9 w-9 rounded-sm bg-cream/95 object-contain p-1" />
           <span className="font-serif text-lg tracking-wide text-cream">
-            Aashiyana <span className="text-gold">Interiors</span>
+            Aashiyana <span className="text-gold">Living</span>
           </span>
         </a>
 

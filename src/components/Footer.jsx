@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="md:col-span-4">
             <div className="flex items-center gap-3">
               <img src={logo.src} alt={logo.alt} className="h-11 w-11 rounded-sm bg-cream/95 object-contain p-1.5" />
-              <span className="font-serif text-xl text-cream">Aashiyana <span className="text-gold">Interiors</span></span>
+              <span className="font-serif text-xl text-cream">Aashiyana <span className="text-gold">Living</span></span>
             </div>
             <p className="mt-5 max-w-xs font-sans text-sm leading-relaxed text-cream/60">
               {BRAND.tagline}. Hyderabad’s turnkey interior design & build studio — residential,

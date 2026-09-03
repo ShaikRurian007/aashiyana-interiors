@@ -22,7 +22,7 @@ export function generateMetadata({ params }) {
   if (!loc) return {};
   const where = loc.hub ? 'Hyderabad' : `${loc.name}, Hyderabad`;
   const title = `Best Interior Designers in ${where}`;
-  const description = `Looking for the best interior designers in ${where}? Aashiyana Interiors & Decors offers turnkey home interiors, modular kitchens, wardrobes, civil works & commercial fit-outs in ${loc.name}. Free design consultation — call ${BRAND.phones[0]}.`;
+  const description = `Looking for the best interior designers in ${where}? Aashiyana Living Interiors & Decors offers turnkey home interiors, modular kitchens, wardrobes, civil works & commercial fit-outs in ${loc.name}. Free design consultation — call ${BRAND.phones[0]}.`;
   return {
     title,
     description,
@@ -60,7 +60,7 @@ export default function LocalityPage({ params }) {
   const faqs = [
     {
       q: `Who are the best interior designers in ${where}?`,
-      a: `Aashiyana Interiors & Decors is a leading turnkey interior design studio serving ${where}. We handle complete home interiors, modular kitchens, wardrobes, civil works and commercial spaces — design to handover under one roof.`,
+      a: `Aashiyana Living Interiors & Decors is a leading turnkey interior design studio serving ${where}. We handle complete home interiors, modular kitchens, wardrobes, civil works and commercial spaces — design to handover under one roof.`,
     },
     {
       q: `How much do home interiors cost in ${loc.name}?`,
@@ -104,7 +104,7 @@ export default function LocalityPage({ params }) {
               Best Interior Designers in <span className="text-gold-gradient">{where}</span>
             </h1>
             <p className="mt-6 max-w-2xl font-sans text-base leading-relaxed text-cream/75">
-              Aashiyana Interiors &amp; Decors is a turnkey interior design &amp; build studio working {inArea}.
+              Aashiyana Living Interiors &amp; Decors is a turnkey interior design &amp; build studio working {inArea}.
               From modular kitchens and wardrobes to full-home interiors, civil works and commercial fit-outs —
               we design it, build it, and hand you the keys.
             </p>

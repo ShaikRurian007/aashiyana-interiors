@@ -83,7 +83,7 @@ export default function DoorHero() {
       ref={root}
       className="door-hero relative h-screen w-full overflow-hidden bg-ink"
       style={{ perspective: '1500px', perspectiveOrigin: '50% 45%' }}
-      aria-label="Enter Aashiyana Interiors"
+      aria-label="Enter Aashiyana Living"
     >
       {/* interior revealed beyond the doors */}
       <img
@@ -158,7 +158,7 @@ export default function DoorHero() {
             Turnkey Interiors
           </p>
           <h1 className="heading-xl text-cream [text-shadow:0_4px_44px_rgba(0,0,0,0.9)]">
-            <span className="block">Aashiyana</span>
+            <span className="block">Aashiyana Living</span>
             <span className="block text-gold-gradient">Interiors &amp; Decors</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl font-sans text-sm uppercase tracking-luxe text-cream/85 [text-shadow:0_2px_14px_rgba(0,0,0,0.9)]">

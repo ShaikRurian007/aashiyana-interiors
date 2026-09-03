@@ -61,13 +61,13 @@ export default function JourneySection({ scene, index }) {
             image={hero}
             eager={index === 0}
             overlay
-            className="reveal h-[58vh] w-full rounded-sm md:h-[78vh]"
+            className="reveal h-[58vh] w-full rounded-2xl md:h-[78vh]"
           />
         </div>
       </div>
 
       <div className="container-luxe mt-12 md:mt-16">
-        <div className="rounded-sm border border-gold/20 bg-coal/45 p-5 md:p-7">
+        <div className="rounded-2xl border border-gold/20 bg-coal/45 p-5 md:p-7">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <p className="font-sans text-sm text-cream/75">
               Open this section gallery for all photos, then close it and continue scrolling.
@@ -75,16 +75,16 @@ export default function JourneySection({ scene, index }) {
             <button
               type="button"
               onClick={() => setIsGalleryOpen(true)}
-              className="btn-gold !py-2.5 !text-xs"
+              className="reveal inline-flex items-center justify-center rounded-full border border-gold/70 bg-gold/10 px-5 py-2.5 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-gold shadow-[inset_0_0_0_1px_rgba(201,162,75,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold hover:text-ink hover:shadow-[0_10px_24px_-12px_rgba(201,162,75,0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60 focus-visible:ring-offset-2 focus-visible:ring-offset-coal active:translate-y-0"
             >
-              View all {images.length} photos
+              View Gallery
             </button>
           </div>
           <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
             {preview.map((image, i) => (
               <figure
                 key={image.src + i}
-                className="group relative overflow-hidden rounded-sm"
+                className="group relative overflow-hidden rounded-xl"
               >
                 <img
                   src={image.src}
@@ -103,7 +103,7 @@ export default function JourneySection({ scene, index }) {
 
       {isGalleryOpen && (
         <div className="fixed inset-0 z-[90] bg-ink/90 p-4 backdrop-blur-sm md:p-8">
-          <div className="mx-auto h-full w-full max-w-6xl overflow-y-auto rounded-sm border border-gold/25 bg-coal p-5 md:p-8">
+          <div className="mx-auto h-full w-full max-w-6xl overflow-y-auto rounded-2xl border border-gold/25 bg-coal p-5 md:p-8">
             <div className="mb-6 flex items-start justify-between gap-4">
               <div>
                 <p className="eyebrow">{scene.eyebrow}</p>
@@ -124,7 +124,7 @@ export default function JourneySection({ scene, index }) {
               {images.map((image, i) => (
                 <figure
                   key={image.src + i}
-                  className="group relative break-inside-avoid overflow-hidden rounded-sm"
+                  className="group relative break-inside-avoid overflow-hidden rounded-xl"
                 >
                   <img
                     src={image.src}
@@ -132,7 +132,7 @@ export default function JourneySection({ scene, index }) {
                     width={image.width}
                     height={image.height}
                     loading={i > 2 ? 'lazy' : 'eager'}
-                    className="w-full"
+                    className="w-full transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                   />
                 </figure>
               ))}

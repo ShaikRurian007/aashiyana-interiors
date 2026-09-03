@@ -17,15 +17,15 @@ const jost = Jost({
   display: 'swap',
 });
 
-const title = 'Best Interior Designers in Hyderabad | Aashiyana Interiors & Decors';
+const title = 'Best Interior Designers in Hyderabad | Aashiyana Living Interiors & Decors';
 const description =
-  'Aashiyana Interiors & Decors — Hyderabad’s turnkey interior design studio. Residential interiors, modular kitchens & wardrobes, civil works and commercial fit-outs. Free design consultation. Book your home today.';
+  'Aashiyana Living Interiors & Decors — Hyderabad’s turnkey interior design studio. Residential interiors, modular kitchens & wardrobes, civil works and commercial fit-outs. Free design consultation. Book your home today.';
 
 export const metadata = {
   metadataBase: new URL(BRAND.url),
   title: {
     default: title,
-    template: '%s | Aashiyana Interiors & Decors',
+    template: '%s | Aashiyana Living Interiors & Decors',
   },
   description,
   keywords: [
@@ -36,7 +36,7 @@ export const metadata = {
     'modular kitchen hyderabad',
     'home interior design hyderabad',
     'interior decorators hyderabad',
-    'Aashiyana Interiors',
+    'Aashiyana Living',
   ],
   authors: [{ name: BRAND.name }],
   creator: BRAND.name,

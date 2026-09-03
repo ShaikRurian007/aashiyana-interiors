@@ -1,12 +1,12 @@
 // Single source of truth for all brand content (from the Aashiyana brand deck).
 
 export const BRAND = {
-  name: 'Aashiyana Interiors & Decors',
-  shortName: 'Aashiyana',
+  name: 'Aashiyana Living Interiors & Decors',
+  shortName: 'Aashiyana Living',
   tagline: 'Design • Build • Elevate',
   city: 'Hyderabad',
   description:
-    'Aashiyana Interiors & Decors is a comprehensive turnkey interior design studio based in Hyderabad — a one-stop solution provider handling everything from design and material sourcing to civil work, modular furniture, quality control and timely handover.',
+    'Aashiyana Living Interiors & Decors is a comprehensive turnkey interior design studio based in Hyderabad — a one-stop solution provider handling everything from design and material sourcing to civil work, modular furniture, quality control and timely handover.',
   phones: ['+91 97003 32544', '+91 99491 41486'],
   phonesRaw: ['919700332544', '919949141486'],
   email: 'aashianainteriorsanddecors@gmail.com',

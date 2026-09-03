@@ -4,7 +4,7 @@ import { BRAND } from '@/lib/content';
 
 export default function WhatsAppButton() {
   const msg = encodeURIComponent(
-    "Hi Aashiyana Interiors! I'd like a free interior design consultation for my home in Hyderabad."
+    "Hi Aashiyana Living! I'd like a free interior design consultation for my home in Hyderabad."
   );
   const href = `https://wa.me/${BRAND.phonesRaw[0]}?text=${msg}`;
 
@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with Aashiyana Interiors on WhatsApp"
+      aria-label="Chat with Aashiyana Living on WhatsApp"
       className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-[0_10px_30px_-5px_rgba(37,211,102,0.6)] transition-transform hover:scale-110"
     >
       <svg viewBox="0 0 24 24" className="h-7 w-7 fill-white" aria-hidden="true">

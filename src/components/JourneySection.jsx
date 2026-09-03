@@ -77,7 +77,7 @@ export default function JourneySection({ scene, index }) {
               onClick={() => setIsGalleryOpen(true)}
               className="reveal inline-flex items-center justify-center rounded-full border border-gold/70 bg-gold/10 px-5 py-2.5 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-gold shadow-[inset_0_0_0_1px_rgba(201,162,75,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold hover:text-ink hover:shadow-[0_10px_24px_-12px_rgba(201,162,75,0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60 focus-visible:ring-offset-2 focus-visible:ring-offset-coal active:translate-y-0"
             >
-              Click here to view gallery
+              View Gallery
             </button>
           </div>
           <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
